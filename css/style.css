@@ -24,6 +24,7 @@ a:visited{
   color: white;
   text-decoration: underline;
 }
+.wrap{word-wrap: break-word;}
 
 /*---colors---*/
 .bold{font-weight: bold;}
