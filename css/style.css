@@ -2,6 +2,7 @@
 
 * {
   font-family: 'Source Code Pro', monospace;
+  font-display: auto;
 }
 body{
   background-color: black;
