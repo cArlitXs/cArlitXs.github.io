@@ -12,6 +12,14 @@ body{
 p{
   margin: 0;
 }
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: white;
+  text-decoration: underline;
+}
 
 /*---colors---*/
 .bold{font-weight: bold;}
@@ -26,4 +34,4 @@ p{
 .darkmagenta{color:darkmagenta;}
 .deeppink{color:deeppink;}
 .darkorange{color:darkorange;}
-.forestgreen{color: lightgreen;}
+.lightgreen{color: lightgreen;}
