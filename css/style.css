@@ -7,9 +7,6 @@
 body{
   background-color: black;
 }
-.container{
-  color: white;
-}
 p{
   margin: 0;
 }
@@ -24,6 +21,19 @@ a:hover{
 a:visited{
   color: white;
   text-decoration: underline;
+}
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   padding: 15px;
+}
+footer p a img{
+  vertical-align: middle;
 }
 .wrap{word-wrap: break-word;}
 
