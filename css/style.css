@@ -41,10 +41,10 @@ footer {
 footer p a img{
   vertical-align: middle;
 }
-.wrap{word-wrap: break-word;}
-footer > p{
-  padding: 15px;
+footer p{
+  padding: 10px;
 }
+.wrap{word-wrap: break-word;}
 
 /*---colors---*/
 .bold{font-weight: bold;}
