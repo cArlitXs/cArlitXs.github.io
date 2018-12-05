@@ -13,6 +13,6 @@ var x = setInterval(function() {
   document.getElementById("conteo").innerHTML = dias + "d " + horas + "h " + minutos + "m " + segundos + "s ";
   if (intervalo < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "El tiempo ha expirado";
+    document.getElementById("conteo").innerHTML = "El tiempo ha expirado";
   }
 }, 1000);
