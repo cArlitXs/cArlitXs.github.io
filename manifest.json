@@ -1,0 +1,28 @@
+{
+    "background_color": "#fff",
+    "description":"Diseñador gráfico y programador",
+    "display": "browser",
+    "lang": "es-ES",
+    "icons": [
+        {
+            "src": "img/icon5.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "img/icon4.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "img/icon3.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "name": "carlitxs.com",
+    "short_name": "carlitxs.com",
+    "start_url": "/",
+    "theme_color": "#000",
+    "scope":"/"
+}
