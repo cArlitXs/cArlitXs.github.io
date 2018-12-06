@@ -4,6 +4,7 @@ var conteoRegresivo = new Date("Jul 28, 2019 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
+  document.getElementById("conteo").innerHTML = "Cargando...";
   var ahora = new Date().getTime();
   var intervalo = conteoRegresivo - ahora;
   var dias = Math.floor(intervalo / (1000 * 60 * 60 * 24));
