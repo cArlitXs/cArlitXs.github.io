@@ -47,40 +47,35 @@ footer p{
 .wrap{word-wrap: break-word;}
 
 /*---LOADER---*/
+.loader {
+  display: block;
+  background-color: grey;
+  color: white;
+  top: 0;
+  left: 0;
 
-  .fadeout {
-    opacity: 0;
-    filter: alpha(opacity=0);
-  }
-  .loader {
-    display: block;
-    background-color: grey;
-    color: white;
-    top: 0;
-    left: 0;
-
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    text-align: center;
-    -webkit-transition: opacity 1s ease;
-    -moz-transition: opacity 1s ease;
-    -o-transition: opacity 1s ease;
-    transition: opacity 1s ease;
-  }
-  .loader-content{
-    display: block;
-    width: 100px;
-    height: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-  }
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  text-align: center;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+.loader-content{
+  display: block;
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
 
 /*---colors---*/
 .bold{font-weight: bold;}

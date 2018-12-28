@@ -14,11 +14,17 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-/*---LOADER---*/
+/*---LOADER---*//*
 window.onload = function(){
 	setTimeout(function(){
 	var loader = document.getElementsByClassName("loader")[0];
 	loader.className="loader fadeout" ;
 	setTimeout(function(){loader.style.display="none"},1000)
 	},1000)
+}*/
+window.onload = function(){
+  var contenedor = document.getElementById('content');
+  contenedor.style.visibility = 'hidden';
+  contenedor.style.transition = "all 2s";
+  contenedor.style.opacity = '0';
 }
