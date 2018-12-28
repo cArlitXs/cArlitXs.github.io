@@ -1,8 +1,5 @@
 /*---Conteo regresivo al 28/07/2019---*/
-// Set the date we're counting down to
 var conteoRegresivo = new Date("Jul 28, 2019 00:00:00").getTime();
-
-// Update the count down every 1 second
 var x = setInterval(function() {
   var ahora = new Date().getTime();
   var intervalo = conteoRegresivo - ahora;
@@ -16,3 +13,12 @@ var x = setInterval(function() {
     document.getElementById("conteo").innerHTML = "El tiempo ha expirado";
   }
 }, 1000);
+
+/*---LOADER---*/
+window.onload = function(){
+	setTimeout(function(){
+	var loader = document.getElementsByClassName("loader")[0];
+	loader.className="loader fadeout" ;
+	setTimeout(function(){loader.style.display="none"},1000)
+	},1000)
+}
