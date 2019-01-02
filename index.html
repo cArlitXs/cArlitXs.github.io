@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/browser.css" />
     <link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/animate.css/bouncing_entrances/bounceIn.css" />
 		<link href="manifest.json" rel="manifest" />
 		<script type="text/javascript" src="js/script.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -52,13 +53,18 @@
 	</head>
 	<body>
 		<div id="content" class="loader">
-		  <h3 class="loader-content">Cargando...</h3>
+		  <div class="loader-content">
+					<div class="loadBar">
+						<div class="bar"></div>
+						<h3>Cargando...</h3>
+					</div>
+				</div>
 		</div>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7GDPGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="container">
       <div class="row code">
-        <div class="browser-mockup bold cornflowerblue wrap">
+        <div id="browser" class="browser-mockup bold cornflowerblue wrap">
           <p class="normal white">&lt;!DOCTYPE HTML&gt;</p>
           <p>&lt;html <span class="normal darkorange">lang<span class="normal white">="</span><span class="normal lightgreen">es</span><span class="normal white">"</span></span>&gt;</p>
 	          <p>&nbsp;&lt;head&gt;</p>

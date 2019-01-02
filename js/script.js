@@ -23,8 +23,10 @@ window.onload = function(){
 	},1000)
 }*/
 window.onload = function(){
-  var contenedor = document.getElementById('content');
+  let contenedor = document.getElementById('content');
+  let nav = document.getElementById('browser');
   contenedor.style.visibility = 'hidden';
-  contenedor.style.transition = "all 2s";
+  contenedor.style.transition = "all 1s";
   contenedor.style.opacity = '0';
+  nav.classList.add("bounceIn");
 }

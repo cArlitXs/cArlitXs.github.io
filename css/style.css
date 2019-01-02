@@ -76,6 +76,26 @@ footer p{
   right: 0;
   margin: auto;
 }
+/*---loader bar---*/
+.bar {
+  float: left;
+  width: 25px;
+  height: 6px;
+  border-radius: 50px;
+  background-color: #4b9cdb;
+  margin-bottom: 10px;
+}
+.l-10 {animation-delay: 1.56s;}
+.loadBar .bar {animation: loadingKeyFrame 2s cubic-bezier(.17,.37,.43,.67) infinite;}
+
+@keyframes loadingKeyFrame {
+  0%,100% {transform: translate(0,0);}
+  50% {
+    transform: translate(100px,0);
+    background-color: #f5634a;
+    width: 25px;
+  }
+}
 
 /*---colors---*/
 .bold{font-weight: bold;}
@@ -91,3 +111,5 @@ footer p{
 .deeppink{color:deeppink;}
 .darkorange{color:darkorange;}
 .lightgreen{color: lightgreen;}
+
+/*---bounce---*/
