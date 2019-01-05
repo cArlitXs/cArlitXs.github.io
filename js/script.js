@@ -14,19 +14,12 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-/*---LOADER---*//*
-window.onload = function(){
-	setTimeout(function(){
-	var loader = document.getElementsByClassName("loader")[0];
-	loader.className="loader fadeout" ;
-	setTimeout(function(){loader.style.display="none"},1000)
-	},1000)
-}*/
+/*---LOADER---*/
 window.onload = function(){
   let contenedor = document.getElementById('content');
   let nav = document.getElementById('browser');
   contenedor.style.visibility = 'hidden';
-  contenedor.style.transition = "all 1s";
+  contenedor.style.transition = "all 0.5s";
   contenedor.style.opacity = '0';
   nav.classList.add("bounceIn");
 }
