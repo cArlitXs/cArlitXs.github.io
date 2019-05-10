@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "user": "admin",
+      "pass": "admin1234",
+      "name": "Administrator",
+      "role": "Admin",
+      "id": "0"
+    },
+    {
+      "id": "1",
+      "user": "test",
+      "pass": "test1234",
+      "name": "Tester",
+      "role": "Tester"
+    },
+    {
+      "user": "dev",
+      "pass": "dev1234",
+      "name": "Developer",
+      "role": "Developer",
+      "id": "2"
+    },
+    {
+      "user": "jsonserver",
+      "pass": "jsonserver",
+      "name": "Json Server",
+      "role": "Developer",
+      "id": "kxQ-ggY"
+    },
+    {
+      "user": "qwerty",
+      "pass": "qwerty",
+      "name": "Qwerty",
+      "role": "Developer",
+      "id": "QU-zTtj"
+    }
+  ],
+  "roles": [
+    {
+      "role": "Admin"
+    },
+    {
+      "role": "Tester"
+    },
+    {
+      "role": "Developer"
+    },
+    {
+      "role": "Undefined"
+    }
+  ]
+}
