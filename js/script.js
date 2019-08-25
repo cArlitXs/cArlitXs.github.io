@@ -1,25 +1,96 @@
-/*---Conteo regresivo al 28/07/2019---*/
-var conteoRegresivo = new Date("Jul 28, 2019 00:00:00").getTime();
-var x = setInterval(function() {
-  var ahora = new Date().getTime();
-  var intervalo = conteoRegresivo - ahora;
-  var dias = Math.floor(intervalo / (1000 * 60 * 60 * 24));
-  var horas = Math.floor((intervalo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutos = Math.floor((intervalo % (1000 * 60 * 60)) / (1000 * 60));
-  var segundos = Math.floor((intervalo % (1000 * 60)) / 1000);
-  document.getElementById("conteo").innerHTML = dias + "d " + horas + "h " + minutos + "m " + segundos + "s ";
-  if (intervalo < 0) {
-    clearInterval(x);
-    document.getElementById("conteo").innerHTML = "El tiempo ha expirado";
-  }
-}, 1000);
+//DOM STRINGS OBJECT
+const DOM = {
+  timelineDate: document.querySelectorAll('.timeline__date'),
+  timelineElem: document.querySelectorAll('.timeline__elem'),
+  timelineBar: document.querySelector('.timeline__bar') };
 
-/*---LOADER---*/
-window.onload = function(){
-  let contenedor = document.getElementById('content');
-  let nav = document.getElementById('browser');
-  contenedor.style.visibility = 'hidden';
-  contenedor.style.transition = "all 0.5s";
-  contenedor.style.opacity = '0';
-  nav.classList.add("bounceIn");
-}
+
+//TIMELINE ELEM SET DIRECTION TO EVENT ITEMS (left or right oriented)
+
+//getting direction from .timeline-elem
+const __getDir = timelineElem => {
+
+  if (timelineElem.classList.contains('timeline__elem--left')) {
+    return 'left';
+  } else if (timelineElem.classList.contains('timeline__elem--right')) {
+    return 'right';
+  }
+
+};
+
+const setDirEvent = () => {
+
+  DOM.timelineElem.forEach(elem => {
+
+    const direction = __getDir(elem);
+
+    const timelineEvent = elem.querySelector('.timeline__event');
+
+    timelineEvent.classList.add(`timeline__event--${direction}`);
+
+  });
+
+};
+
+//TIMELINE ELEM DATE STYLES (background)
+const __getBGImage = () => {
+
+  const compStyle = getComputedStyle(DOM.timelineBar);
+
+  return compStyle.backgroundImage;
+
+};
+
+const __getBGSize_height = () => {
+
+  const timebarHeight = DOM.timelineBar.offsetHeight;
+
+  return timebarHeight;
+
+};
+
+const __getBGPos_y = dateElem => {
+
+  const timelinebarBox = DOM.timelineBar.getBoundingClientRect();
+
+  const dateBox = dateElem.getBoundingClientRect();
+
+  const pos_y = dateBox.top - timelinebarBox.top;
+
+  return pos_y;
+
+};
+
+const setDateBG = () => {
+
+  const bgImg = __getBGImage();
+
+  const bgHeight = __getBGSize_height();
+
+  DOM.timelineDate.forEach(elem => {
+
+    //setting bgImage
+    elem.style.backgroundImage = bgImg;
+
+    //setting bgSize
+    elem.style.backgroundSize = `100% ${bgHeight}px`;
+
+    //setting bgPosition
+    const dateOffset = __getBGPos_y(elem);
+
+    elem.style.backgroundPosition = `0 -${dateOffset}px`;
+
+  });
+
+};
+
+//ONLOAD FUNCTION
+window.addEventListener('load', () => {
+
+  //setting direction class to the timeline event block
+  setDirEvent();
+
+  //set date background styles
+  setDateBG();
+
+});
