@@ -1,100 +1,164 @@
 <!DOCTYPE HTML>
 <html lang="es">
-	<head>
-		<title>Carlitos | En construcción</title>
-		<meta charset="utf-8" />
-		<meta name="description" content="Diseñador gráfico y programador" />
-		<meta name="author" content="Carlos Alvarez L." />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="theme-color" content="#000" />
-		<meta name="robots"  content="index,follow" />
-		<meta name="googlebot"  content="index,follow" />
-		<meta name="google" content="notranslate" />
-		<link rel="icon" href="img/icon1.png" />
+
+<head>
+    <title>Carlitos | En construcción</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Diseñador gráfico y programador" />
+    <meta name="author" content="Carlos Alvarez L." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#000" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="google" content="notranslate" />
+    <link rel="icon" href="img/icon1.png" />
     <link rel="stylesheet" href="css/grid.css" />
     <link rel="stylesheet" href="css/browser.css" />
     <link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/animate.css/bouncing_entrances/bounceIn.css" />
-		<link href="manifest.json" rel="manifest" />
-		<script type="text/javascript" src="js/script.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130776008-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+    <link rel="stylesheet" href="css/animate.css/bouncing_entrances/bounceIn.css" />
+    <link href="manifest.json" rel="manifest" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130776008-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-		  gtag('config', 'UA-130776008-1');
-		</script>
-		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-K7GDPGM');
-		</script>
-		<!-- Google Optimize -->
-		<style>.async-hide { opacity: 0 !important} </style>
-		<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-		h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-		(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-		})(window,document.documentElement,'async-hide','dataLayer',4000,
-		{'GTM-PRJ9TQT':true});</script>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		  ga('create', 'UA-65203190-2', 'auto');
-		  ga('require', 'GTM-PRJ9TQT');
-		  ga('send', 'pageview');
-		</script>
-	</head>
-	<body>
-		<div id="content" class="loader">
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130776008-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K7GDPGM');
+    </script>
+    <!-- Google Optimize -->
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+    </style>
+    <script>
+        (function(a, s, y, n, c, h, i, d, e) {
+            s.className += ' ' + y;
+            h.start = 1 * new Date;
+            h.end = i = function() {
+                s.className = s.className.replace(RegExp(' ?' + y), '')
+            };
+            (a[n] = a[n] || []).hide = h;
+            setTimeout(function() {
+                i();
+                h.end = null
+            }, c);
+            h.timeout = c;
+        })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
+            'GTM-PRJ9TQT': true
+        });
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-65203190-2', 'auto');
+        ga('require', 'GTM-PRJ9TQT');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <!-- <div id="content" class="loader">
 		  <div class="loader-content">
 					<div class="loadBar">
 						<div class="bar"></div>
 						<h3>Cargando...</h3>
 					</div>
 				</div>
-		</div>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7GDPGM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <div class="container">
-      <div class="row code">
-        <div id="browser" class="browser-mockup bold cornflowerblue wrap">
-          <p class="normal white">&lt;!DOCTYPE HTML&gt;</p>
-          <p>&lt;html <span class="normal darkorange">lang<span class="normal white">="</span><span class="normal lightgreen">es</span><span class="normal white">"</span></span>&gt;</p>
-	          <p>&nbsp;&lt;head&gt;</p>
-	          	<p>&nbsp;&nbsp;&lt;title&gt;<span class="normal white">carlitxs.com | En construcción</span>&lt;/title&gt;</p>
-							<p>&nbsp;&nbsp;&lt;meta <span class="normal darkorange">name<span class="normal white">="</span><span class="normal lightgreen">description</span><span class="normal white">"</span> <span class="normal darkorange">content</span><span class="normal white">="</span><span class="normal lightgreen">Diseñador gráfico y programador</span></span>"&gt;</p>
-							<p>&nbsp;&nbsp;&lt;meta <span class="normal darkorange">name<span class="normal white">="</span><span class="normal lightgreen">author</span><span class="normal white">"</span> <span class="normal darkorange">content</span><span class="normal white">="</span><span class="normal lightgreen">Carlos Alvarez L.</span></span>"&gt;</p>
-	          <p>&nbsp;&lt;/head&gt;</p>
-						<p>&nbsp;&lt;body&gt;</p>
-							<p>&nbsp;&nbsp;&lt;h1&gt;<span class="normal white">Sitio web en construcción</span>&lt;/h1&gt;</p>
-							<p>&nbsp;&nbsp;&lt;h4&gt;<span class="normal white">Proyetos</span>&lt;/h4&gt;</p>
-							<p>&nbsp;&nbsp;&lt;ul&gt;</p>
-								<p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a href="https://carlitxs.github.io/ProyectoFinalDaw/Preview/">Proyecto final DAW</a></span>&lt;/li&gt;</p>
-								<p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a href="https://carlitxs.github.io/TablaPacientes/">Formulario de pacientes</a></span>&lt;/li&gt;</p>
-								<p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a href="https://carlitxs.github.io/HawksBurgers/">Hawks Burgers (Web App)</a></span>&lt;/li&gt;</p>
-								<p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a href="http://s4t5.herokuapp.com/dist">Template (VueJS)</a></span>&lt;/li&gt;</p>
-								<p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a href="https://carlitxs.github.io/React-ToDo/">ToDo (ReactJS)</a></span>&lt;/li&gt;</p>
-								<p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a href="https://github.com/cArlitXs/LitElement">List (LitElement)</a></span>&lt;/li&gt;</p>
-							<p>&nbsp;&nbsp;&lt;/ul&gt;</p>
-							<p>&nbsp;&nbsp;&lt;a <span class="normal darkorange">href<span class="normal white">="</span><span class="normal lightgreen">https://twitter.com/carlitos_al_li</span><span class="normal white">"</span></span>&gt;<span class="normal white"><a href="https://twitter.com/carlitos_al_li">Twitter</a></span>&lt;/a&gt;</p>
-							<p>&nbsp;&nbsp;&lt;a <span class="normal darkorange">href<span class="normal white">="</span><span class="normal lightgreen">https://github.com/cArlitXs</span><span class="normal white">"</span></span>&gt;<span class="normal white"><a href="https://github.com/cArlitXs">GitHub</a></span>&lt;/a&gt;</p>
-							<p>&nbsp;&nbsp;&lt;a <span class="normal darkorange">href<span class="normal white">="</span><span class="normal lightgreen">mailto:carlitosalvarezlinares@gmail.com</span><span class="normal white">"</span></span>&gt;<span class="normal white"><a href="mailto:carlitosalvarezlinares@gmail.com">Email</a></span>&lt;/a&gt;</p>
-							<p>&nbsp;&nbsp;&lt;p&gt;<span class="normal white">Creative Commons 4.0 Internacional</span>&lt;/p&gt;</p>
-						<p>&nbsp;&lt;/body&gt;</p>
-          <p>&lt;/html&gt;</p>
-        </div>
-      </div>
+		</div> -->
+
+    <div id="content" class="load">
+        <pre class="term">carlitxs@dev:~$ </pre>
     </div>
-		<footer class="wrap">
-			<p class="white">Tiempo de espera: <span id="conteo" class="white bold">Cargando...</span></p>
-			<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> Diseñado por: Carlitos para <a href="https://carlitxs.com">carlitxs.com</a></p>
-		</footer>
-	</body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7GDPGM" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+    <div id="contenedor" class="container">
+        <div class="row code">
+            <div id="browser" class="browser-mockup bold cornflowerblue wrap">
+                <p class="normal white">&lt;!DOCTYPE HTML&gt;</p>
+                <p>&lt;html <span class="normal darkorange">lang<span class="normal white">="</span><span class="normal lightgreen">es</span><span class="normal white">"</span></span>&gt;</p>
+                <p>&nbsp;&lt;head&gt;</p>
+                <p>&nbsp;&nbsp;&lt;title&gt;<span class="normal white">carlitxs.com | En
+						construcción</span>&lt;/title&gt;</p>
+                <p>&nbsp;&nbsp;&lt;meta <span class="normal darkorange">name<span class="normal white">="</span><span class="normal lightgreen">description</span><span class="normal white">"</span> <span class="normal darkorange">content</span><span class="normal white">="</span>
+                    <span class="normal lightgreen">Diseñador gráfico y programador</span>
+                    </span>"&gt;</p>
+                <p>&nbsp;&nbsp;&lt;meta <span class="normal darkorange">name<span class="normal white">="</span><span class="normal lightgreen">author</span><span class="normal white">"</span> <span class="normal darkorange">content</span><span class="normal white">="</span>
+                    <span class="normal lightgreen">Carlos Alvarez L.</span>
+                    </span>"&gt;</p>
+                <p>&nbsp;&lt;/head&gt;</p>
+                <p>&nbsp;&lt;body&gt;</p>
+                <p>&nbsp;&nbsp;&lt;h1&gt;<span class="normal white">Sitio web en construcción</span>&lt;/h1&gt;</p>
+                <p>&nbsp;&nbsp;&lt;h4&gt;<span class="normal white">Proyetos</span>&lt;/h4&gt;</p>
+                <p>&nbsp;&nbsp;&lt;ul&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a
+							href="https://carlitxs.github.io/ProyectoFinalDaw/Preview/">Proyecto final
+							DAW</a></span>&lt;/li&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a
+							href="https://carlitxs.github.io/TablaPacientes/">Formulario de
+							pacientes</a></span>&lt;/li&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a
+							href="https://carlitxs.github.io/HawksBurgers/">Hawks Burgers (Web
+							App)</a></span>&lt;/li&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a
+							href="http://s4t5.herokuapp.com/dist">Template (VueJS)</a></span>&lt;/li&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a
+							href="https://carlitxs.github.io/React-ToDo/">ToDo (ReactJS)</a></span>&lt;/li&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&lt;li&gt;<span class="normal white"><a
+							href="https://github.com/cArlitXs/LitElement">List (LitElement)</a></span>&lt;/li&gt;</p>
+                <p>&nbsp;&nbsp;&lt;/ul&gt;</p>
+                <p>&nbsp;&nbsp;&lt;a <span class="normal darkorange">href<span class="normal white">="</span><span class="normal lightgreen">https://twitter.com/carlitos_al_li</span><span class="normal white">"</span></span>&gt;<span class="normal white"><a
+							href="https://twitter.com/carlitos_al_li">Twitter</a></span>&lt;/a&gt;</p>
+                <p>&nbsp;&nbsp;&lt;a <span class="normal darkorange">href<span class="normal white">="</span><span class="normal lightgreen">https://github.com/cArlitXs</span><span class="normal white">"</span></span>&gt;<span class="normal white"><a
+							href="https://github.com/cArlitXs">GitHub</a></span>&lt;/a&gt;</p>
+                <p>&nbsp;&nbsp;&lt;a <span class="normal darkorange">href<span class="normal white">="</span><span class="normal lightgreen">mailto:carlitosalvarezlinares@gmail.com</span><span class="normal white">"</span></span>&gt;<span class="normal white"><a
+							href="mailto:carlitosalvarezlinares@gmail.com">Email</a></span>&lt;/a&gt;</p>
+                <p>&nbsp;&nbsp;&lt;p&gt;<span class="normal white">Creative Commons 4.0 Internacional</span>&lt;/p&gt;
+                </p>
+                <p>&nbsp;&lt;/body&gt;</p>
+                <p>&lt;/html&gt;</p>
+            </div>
+        </div>
+        <footer class="wrap">
+            <p class="white">Tiempo de espera: <span id="conteo" class="white bold">Cargando...</span></p>
+            <p>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> Diseñado por: Carlitos para <a href="https://carlitxs.com">carlitxs.com</a></p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
 </html>
